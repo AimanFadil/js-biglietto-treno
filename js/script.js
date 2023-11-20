@@ -15,5 +15,8 @@ else {
 }
 /* console.log(totale) */
 
+
 let n = totale.toFixed(2);
+document.getElementById(`price`).innerHTML = n;
 console.log(n)
+
