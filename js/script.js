@@ -2,16 +2,18 @@ let kilometri = prompt('Quanti chilometri vuoi percorrere?')
 
 let eta = prompt('Quanti anni hai?')
 
-let totale = kilometri * 0.21 ;
+let totale = kilometri * 0.21;
 
-if (eta < 18) {
-    totale -= totale - 20 / 100;
+if (eta < 17) {
+    totale = totale * 20 / 100;
 } 
-else if (eta > 19 < 64) {
-    totale = totale
+else if (eta >= 65) {
+    totale = totale * 40 / 100;
 } 
-else  {
-    totale -= totale - 40 / 100;
+else {
+    
 }
+/* console.log(totale) */
 
-console.log(totale)
+let n = totale.toFixed(2);
+console.log(n)
